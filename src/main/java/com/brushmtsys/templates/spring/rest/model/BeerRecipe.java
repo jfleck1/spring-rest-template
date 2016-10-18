@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by justin on 10/18/16.
  */
-public class BeerReceipe {
+public class BeerRecipe {
     private String name;
     private Date createdOn;
     private BeerStyle style;

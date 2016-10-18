@@ -1,6 +1,5 @@
 package com.brushmtsys.templates.spring.rest;
 
-import com.brushmtsys.templates.spring.rest.controllers.BeerReceipeController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
