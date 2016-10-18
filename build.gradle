@@ -3,16 +3,7 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE")
-    testCompile('org.springframework.boot:spring-boot-starter-test:1.4.1.RELEASE')
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-}
-
+// SONARQUBE
 buildscript {
     repositories {
         maven {
@@ -23,5 +14,15 @@ buildscript {
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.2"
     }
 }
-
 apply plugin: "org.sonarqube"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE")
+    testCompile('org.springframework.boot:spring-boot-starter-test:1.4.1.RELEASE')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
