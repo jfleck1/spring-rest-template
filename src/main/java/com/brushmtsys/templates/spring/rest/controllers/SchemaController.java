@@ -24,6 +24,8 @@ public class SchemaController {
         JsonSchema schema;
         Class<?> clazz;
 
+        // Use the main BeerRecipe class to anchor where the other model classes
+        // should be
         String modelPackage = ClassUtils.getPackageName(BeerRecipe.class);
         String classFQN = modelPackage + "." + className;
 
