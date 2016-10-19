@@ -2,14 +2,16 @@ package com.brushmtsys.templates.spring.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Created by justin on 10/18/16.
  */
 @EnableAutoConfiguration
-public class BeerReceipeApp {
+@SpringBootApplication
+public class BeerRecipeApp {
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(BeerReceipeApp.class, args);
+        SpringApplication.run(BeerRecipeApp.class, args);
     }
 }
