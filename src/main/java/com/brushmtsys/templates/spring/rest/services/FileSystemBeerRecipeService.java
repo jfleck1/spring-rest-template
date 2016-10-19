@@ -2,6 +2,7 @@ package com.brushmtsys.templates.spring.rest.services;
 
 import com.brushmtsys.templates.spring.rest.model.BeerRecipe;
 import com.brushmtsys.templates.spring.rest.model.BeerStyle;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
