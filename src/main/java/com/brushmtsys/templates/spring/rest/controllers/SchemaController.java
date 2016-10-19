@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 public class SchemaController {
-    private static final Logger LOGGER = Logger.getLogger(SchemaController.class);
     @RequestMapping("/schema/{className}")
     @ResponseBody
     JsonSchema getSchema(@PathVariable String className) throws JsonMappingException {
