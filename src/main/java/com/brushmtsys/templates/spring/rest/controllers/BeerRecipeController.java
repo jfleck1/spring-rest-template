@@ -16,7 +16,7 @@ public class BeerRecipeController {
     @Autowired
     private BeerRecipeService beerRecipeService;
 
-    @RequestMapping("/")
+    @RequestMapping("/beer")
     @ResponseBody
     BeerRecipe getBeerRecipe(String name) {
         return beerRecipeService.read(name);
