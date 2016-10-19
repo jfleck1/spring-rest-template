@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.beans.factory.annotation.Required;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by justin on 10/18/16.
@@ -16,6 +17,8 @@ public class BeerRecipe {
     private double specificGravity;
     private double abv;
     private long ibu;
+    private List<RecipeStep> steps;
+
 
     public String getName() {
         return name;
@@ -63,5 +66,13 @@ public class BeerRecipe {
 
     public void setIbu(long ibu) {
         this.ibu = ibu;
+    }
+
+    public List<RecipeStep> getSteps() {
+        return steps;
+    }
+
+    public void setSteps(List<RecipeStep> steps) {
+        this.steps = steps;
     }
 }
