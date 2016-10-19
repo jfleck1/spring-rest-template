@@ -1,3 +1,6 @@
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+
 group 'com.brushmtsys'
 version '1.0-SNAPSHOT'
 
@@ -29,3 +32,16 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 
+task(myTask) {
+    // Embedded Java example
+    String test = "This is a test";
+    System.out.println(test);
+
+    // Using Java included utilities
+    UUID myUUID = UUID.randomUUID();
+    System.out.println(myUUID.toString());
+
+    // Using non-included utilities
+    DateFormat format = new SimpleDateFormat("MMYYYdd");
+    System.out.println(format.format(new Date()));
+}
