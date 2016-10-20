@@ -1,12 +1,13 @@
 package com.brushmtsys.templates.spring.rest.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.springframework.beans.factory.annotation.Required;
 
 import java.util.Date;
 import java.util.List;
 
 /**
+ * The main recipe class for making beer
+ *
  * Created by justin on 10/18/16.
  */
 public class BeerRecipe {

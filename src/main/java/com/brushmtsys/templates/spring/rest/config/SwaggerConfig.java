@@ -9,6 +9,8 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
+ * The configuration object for Swagger 2
+ *
  * Created by justin on 10/19/16.
  */
 @Configuration

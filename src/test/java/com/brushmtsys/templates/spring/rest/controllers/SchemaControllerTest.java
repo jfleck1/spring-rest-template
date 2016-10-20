@@ -8,6 +8,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
+ * SchemaControllerTest
+ *
  * Created by justin on 10/19/16.
  */
 public class SchemaControllerTest {
@@ -21,7 +23,7 @@ public class SchemaControllerTest {
     /**
      * Test to see if we can get a schema by using only the model object's simple name
      *
-     * @throws Exception
+     * @throws Exception If the test fails
      */
     @Test
     public void testGetSimpleName() throws Exception {
@@ -38,12 +40,11 @@ public class SchemaControllerTest {
     public void testClassNotFound() throws JsonMappingException {
 
         try {
-            JsonSchema schema = controller.getSchema("BadClassNameNoNoOops");
+            controller.getSchema("BadClassNameNoNoOops");
             Assert.fail("The method should've thrown a SchemaClassNotFoundException");
         } catch (SchemaClassNotFoundException e) {
             // Getting here would be a good thing
         }
-
 
     }
 }

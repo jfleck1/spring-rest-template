@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
+ * The controller for the BeerRecipe resource
+ *
  * Created by justin on 10/18/16.
  */
 @Controller

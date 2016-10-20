@@ -1,8 +1,8 @@
 package com.brushmtsys.templates.spring.rest.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 /**
+ * An ordered step in a list of instructions for a recipe
+ *
  * Created by justin on 10/19/16.
  */
 public class RecipeStep {
