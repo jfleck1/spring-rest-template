@@ -19,6 +19,7 @@ public class ExternalBeerRecipe {
     private Date created;
     private String slug;
     private String id;
+    private String parent;
 
     public String getId() {
         return id;
@@ -35,8 +36,6 @@ public class ExternalBeerRecipe {
     public void setParent(String parent) {
         this.parent = parent;
     }
-
-    private String parent;
 
     public Date getCreated() {
         return created;
