@@ -15,9 +15,11 @@ buildscript {
     }
     dependencies {
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.2"
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
     }
 }
 apply plugin: "org.sonarqube"
+apply plugin: "spring-boot"
 
 repositories {
     mavenCentral()
